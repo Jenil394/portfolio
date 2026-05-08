@@ -19,30 +19,42 @@ export default function About() {
 
       <div className="min-h-screen pt-24">
         {/* Hero */}
-        <section className="relative px-6 lg:px-8 py-12 md:py-20 border-b border-border overflow-hidden">
-          <div
-            className="absolute inset-0 -z-10 bg-cover bg-center"
-            style={{ backgroundImage: `url(${aboutHeroCat})` }}
-            aria-hidden="true"
-          />
-          <div className="absolute inset-0 -z-10 bg-background/70 dark:bg-background/75 backdrop-blur-[2px]" aria-hidden="true" />
-          <div className="max-w-4xl mx-auto space-y-6">
-            <motion.div
-              initial={{ opacity: 0, y: 16 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-              className="space-y-4"
-            >
-              <p className="text-xs font-light tracking-[0.3em] text-muted-foreground uppercase">
-                About
-              </p>
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-light tracking-tight">
-                {developerInfo.name}
-              </h1>
-              <p className="text-lg md:text-xl text-muted-foreground font-light">
-                {developerInfo.tagline}
-              </p>
-            </motion.div>
+        <section className="relative border-b border-border overflow-hidden">
+          {/* Top: poster image with its own quote visible */}
+          <div className="relative w-full">
+            <img
+              src={aboutHeroCat}
+              alt="Cinematic hero artwork — 'I am a man of fortune, and I must seek my fortune.'"
+              className="w-full h-auto object-cover object-center select-none"
+              draggable={false}
+            />
+            {/* Subtle bottom fade so the heading area below blends in */}
+            <div
+              className="pointer-events-none absolute inset-x-0 bottom-0 h-24 bg-gradient-to-b from-transparent to-background"
+              aria-hidden="true"
+            />
+          </div>
+
+          {/* Below: page heading, fully readable on the normal background */}
+          <div className="px-6 lg:px-8 py-12 md:py-16">
+            <div className="max-w-4xl mx-auto space-y-6">
+              <motion.div
+                initial={{ opacity: 0, y: 16 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5 }}
+                className="space-y-4"
+              >
+                <p className="text-xs font-light tracking-[0.3em] text-muted-foreground uppercase">
+                  About
+                </p>
+                <h1 className="text-5xl md:text-6xl lg:text-7xl font-light tracking-tight">
+                  {developerInfo.name}
+                </h1>
+                <p className="text-lg md:text-xl text-muted-foreground font-light">
+                  {developerInfo.tagline}
+                </p>
+              </motion.div>
+            </div>
           </div>
         </section>
 
