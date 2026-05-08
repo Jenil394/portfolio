@@ -5,7 +5,6 @@ import { Separator } from '@/components/ui/separator';
 import { Badge } from '@/components/ui/badge';
 import { SEOHead } from '@/components/seo/SEOHead';
 import { ScrollReveal } from '@/components/ui/ScrollReveal';
-import aboutHeroCat from '@/assets/about-hero-cat.jpg';
 
 export default function About() {
   const { socialLinks } = developerInfo;
@@ -19,35 +18,24 @@ export default function About() {
 
       <div className="min-h-screen pt-24">
         {/* Hero */}
-        <section className="relative border-b border-border overflow-hidden">
-          {/* Background image with overlay */}
-          <div
-            className="absolute inset-0 bg-cover bg-center"
-            style={{ backgroundImage: `url(${aboutHeroCat})` }}
-            aria-hidden="true"
-          />
-          <div className="absolute inset-0 bg-background/80 dark:bg-background/85 backdrop-blur-[3px]" aria-hidden="true" />
-
-          {/* Content on top */}
-          <div className="relative px-6 lg:px-8 py-20 md:py-28">
-            <div className="max-w-4xl mx-auto space-y-6">
-              <motion.div
-                initial={{ opacity: 0, y: 16 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5 }}
-                className="space-y-4"
-              >
-                <p className="text-xs font-light tracking-[0.3em] text-muted-foreground uppercase">
-                  About
-                </p>
-                <h1 className="text-5xl md:text-6xl lg:text-7xl font-light tracking-tight">
-                  {developerInfo.name}
-                </h1>
-                <p className="text-lg md:text-xl text-muted-foreground font-light">
-                  {developerInfo.tagline}
-                </p>
-              </motion.div>
-            </div>
+        <section className="px-6 lg:px-8 py-12 md:py-20 border-b border-border">
+          <div className="max-w-4xl mx-auto space-y-6">
+            <motion.div
+              initial={{ opacity: 0, y: 16 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+              className="space-y-4"
+            >
+              <p className="text-xs font-light tracking-[0.3em] text-muted-foreground uppercase">
+                About
+              </p>
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-light tracking-tight">
+                {developerInfo.name}
+              </h1>
+              <p className="text-lg md:text-xl text-muted-foreground font-light">
+                {developerInfo.tagline}
+              </p>
+            </motion.div>
           </div>
         </section>
 
