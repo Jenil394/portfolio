@@ -19,7 +19,13 @@ export default function About() {
 
       <div className="min-h-screen pt-24">
         {/* Hero */}
-        <section className="px-6 lg:px-8 py-12 md:py-20 border-b border-border">
+        <section className="relative px-6 lg:px-8 py-12 md:py-20 border-b border-border overflow-hidden">
+          <div
+            className="absolute inset-0 -z-10 bg-cover bg-center"
+            style={{ backgroundImage: `url(${aboutHeroCat})` }}
+            aria-hidden="true"
+          />
+          <div className="absolute inset-0 -z-10 bg-background/70 dark:bg-background/75 backdrop-blur-[2px]" aria-hidden="true" />
           <div className="max-w-4xl mx-auto space-y-6">
             <motion.div
               initial={{ opacity: 0, y: 16 }}
