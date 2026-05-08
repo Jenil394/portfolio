@@ -5,6 +5,7 @@ import { Separator } from '@/components/ui/separator';
 import { Badge } from '@/components/ui/badge';
 import { SEOHead } from '@/components/seo/SEOHead';
 import { ScrollReveal } from '@/components/ui/ScrollReveal';
+import aboutHeroCat from '@/assets/about-hero-cat.jpg';
 
 export default function About() {
   const { socialLinks } = developerInfo;
