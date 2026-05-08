@@ -1,41 +1,63 @@
-import type { PhotographerInfo } from '@/types';
+import type { DeveloperInfo } from '@/types';
 
-export const photographerInfo: PhotographerInfo = {
-  name: 'Sarah Mitchell',
-  tagline: 'Editorial & Commercial Photographer',
-  heroIntroduction: 'Creating visual narratives that capture authentic moments and timeless stories.',
-  biography: `Sarah Mitchell is an award-winning photographer specializing in editorial and commercial work, with recognition including the International Photography Awards Editorial Photographer of the Year 2023 and PDN Photo Annual Winner 2022. With over a decade of experience, her work has been featured in numerous international publications and exhibitions, collaborating with clients such as Vogue, The New York Times, National Geographic, Adobe, Apple, Nike, and Architectural Digest.
+/**
+ * Personal info for Jenil Mansuriya — kept at this path for backwards compatibility.
+ * Prefer importing `developerInfo` going forward.
+ */
+export const developerInfo: DeveloperInfo = {
+  name: 'Jenil Mansuriya',
+  tagline: 'Computer Science Engineer · ML & Systems',
+  heroIntroduction:
+    'I build intelligent systems and developer tools — from EEG signal pipelines and ensemble deep learning models to real-time collaborative platforms.',
+  biography: `I'm a Computer Science and Engineering undergraduate at IIIT Vadodara with a focus on machine learning, signal processing, and systems engineering. I enjoy taking ideas from a research paper or a rough sketch all the way to a deployed, working system.
 
-Based in New York with an MFA in Photography from the School of Visual Arts, Sarah brings a unique perspective to every project, combining technical excellence with artistic vision. Her approach to photography is deeply rooted in storytelling, believing that every image should convey emotion and meaning beyond its visual appeal.`,
-  approach: `My photography is guided by three principles: authenticity, composition, and light. I believe the best images emerge when subjects feel comfortable and genuine, when composition guides the viewer's eye naturally, and when light reveals the essence of the moment.
-
-Whether working on editorial assignments or commercial projects, I strive to create images that transcend their immediate purpose and become lasting visual statements.`,
-  awards: [
-    'International Photography Awards - Editorial Photographer of the Year 2023',
-    'PDN Photo Annual - Winner 2022',
-    'Hasselblad Masters Finalist 2021',
-    'Communication Arts Photography Annual 2020'
-  ],
-  clients: [
-    'Vogue',
-    'The New York Times',
-    'National Geographic',
-    'Adobe',
-    'Apple',
-    'Nike',
-    'Patagonia',
-    'Architectural Digest'
-  ],
-  education: 'MFA Photography, School of Visual Arts, New York',
-  location: 'New York, NY',
-  email: 'hello@sarahmitchell.com',
-  phone: '+1 (555) 123-4567',
-  availability: 'Currently booking for Q2 2025',
-  socialLinks: {
-    instagram: 'https://instagram.com/sarahmitchellphoto',
-    linkedin: 'https://linkedin.com/in/sarahmitchell',
-    behance: 'https://behance.net/sarahmitchell'
+My recent work spans EEG-based brain aging analysis, mixture-of-experts deep learning for plant disease detection, and low-latency collaborative tooling. I also compete actively in CTFs and hackathons, where I focus on PWN, Reverse Engineering, and AI security.`,
+  location: 'Jamnagar, Gujarat, India',
+  email: 'jenilmansuriya@gmail.com',
+  phone: '+91-7861933364',
+  availability: 'Open to internships and research collaborations',
+  education: {
+    institution: 'Indian Institute of Information Technology, Vadodara — ICD',
+    degree: 'B.Tech in Computer Science and Engineering',
+    period: '2023 – 2027',
   },
-  // Photo by Joshua Sun on Unsplash
-  portraitImage: 'https://images.unsplash.com/photo-1585279968680-6606ee6ed134?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MDA2OTF8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjI3Njk1NjB8&ixlib=rb-4.1.0&q=80&w=1080'
+  skills: [
+    {
+      label: 'Languages',
+      items: ['C', 'C++', 'Python', 'JavaScript', 'SQL'],
+    },
+    {
+      label: 'Frameworks & Libraries',
+      items: ['Node.js', 'Flask', 'TensorFlow / Keras', 'scikit-learn', 'WebSocket', 'Socket.io'],
+    },
+    {
+      label: 'Databases',
+      items: ['MySQL', 'MongoDB'],
+    },
+    {
+      label: 'Tools & Platforms',
+      items: ['Git / GitHub', 'Linux', 'VS Code', 'Azure', 'MNE-Python', 'MATLAB'],
+    },
+  ],
+  achievements: [
+    {
+      title: 'Top 10 — National AI × Cybersecurity Hackathon',
+      description:
+        'Finished 6th nationally in the AI × Cybersecurity Hackathon organised by ACM SVNIT and ISEA (Ministry of Electronics and Information Technology, India).',
+    },
+    {
+      title: 'National CTF Team — Rank 27',
+      description:
+        'Competed as part of a top-ranked national CTF team, solving challenges across Misc, PWN, and Reverse Engineering categories.',
+    },
+  ],
+  socialLinks: {
+    github: 'https://github.com/',
+    linkedin: 'https://linkedin.com/',
+    leetcode: 'https://leetcode.com/',
+    geeksforgeeks: 'https://auth.geeksforgeeks.org/',
+  },
 };
+
+// Backwards-compatible alias used by older imports.
+export const photographerInfo = developerInfo;
