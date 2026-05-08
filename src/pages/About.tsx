@@ -20,23 +20,16 @@ export default function About() {
       <div className="min-h-screen pt-24">
         {/* Hero */}
         <section className="relative border-b border-border overflow-hidden">
-          {/* Top: poster image with its own quote visible */}
-          <div className="relative w-full">
-            <img
-              src={aboutHeroCat}
-              alt="Cinematic hero artwork — 'I am a man of fortune, and I must seek my fortune.'"
-              className="w-full h-auto object-cover object-center select-none"
-              draggable={false}
-            />
-            {/* Subtle bottom fade so the heading area below blends in */}
-            <div
-              className="pointer-events-none absolute inset-x-0 bottom-0 h-24 bg-gradient-to-b from-transparent to-background"
-              aria-hidden="true"
-            />
-          </div>
+          {/* Background image with overlay */}
+          <div
+            className="absolute inset-0 bg-cover bg-center"
+            style={{ backgroundImage: `url(${aboutHeroCat})` }}
+            aria-hidden="true"
+          />
+          <div className="absolute inset-0 bg-background/80 dark:bg-background/85 backdrop-blur-[3px]" aria-hidden="true" />
 
-          {/* Below: page heading, fully readable on the normal background */}
-          <div className="px-6 lg:px-8 py-12 md:py-16">
+          {/* Content on top */}
+          <div className="relative px-6 lg:px-8 py-20 md:py-28">
             <div className="max-w-4xl mx-auto space-y-6">
               <motion.div
                 initial={{ opacity: 0, y: 16 }}
