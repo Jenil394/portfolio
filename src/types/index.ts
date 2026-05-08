@@ -46,7 +46,7 @@ export interface DeveloperInfo {
   biography: string;
   location: string;
   email: string;
-  phone: string;
+  phone?: string;
   availability: string;
   education: Education;
   skills: SkillGroup[];
@@ -54,8 +54,7 @@ export interface DeveloperInfo {
   socialLinks: {
     github?: string;
     linkedin?: string;
-    leetcode?: string;
-    geeksforgeeks?: string;
+
   };
 }
 

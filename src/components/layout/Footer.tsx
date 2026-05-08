@@ -1,4 +1,4 @@
-import { Github, Linkedin, Code2, Brain } from 'lucide-react';
+import { Github, Linkedin } from 'lucide-react';
 import { developerInfo } from '@/data/photographer';
 
 /**
@@ -39,28 +39,7 @@ export function Footer() {
                 <Linkedin className="size-5" />
               </a>
             )}
-            {socialLinks.leetcode && (
-              <a
-                href={socialLinks.leetcode}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-muted-foreground hover:text-foreground transition-colors"
-                aria-label="LeetCode"
-              >
-                <Code2 className="size-5" />
-              </a>
-            )}
-            {socialLinks.geeksforgeeks && (
-              <a
-                href={socialLinks.geeksforgeeks}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-muted-foreground hover:text-foreground transition-colors"
-                aria-label="GeeksforGeeks"
-              >
-                <Brain className="size-5" />
-              </a>
-            )}
+
           </div>
         </div>
       </div>

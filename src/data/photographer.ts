@@ -14,10 +14,10 @@ export const developerInfo: DeveloperInfo = {
 My recent work spans EEG-based brain aging analysis, mixture-of-experts deep learning for plant disease detection, and low-latency collaborative tooling. I also compete actively in CTFs and hackathons, where I focus on PWN, Reverse Engineering, and AI security.`,
   location: 'Jamnagar, Gujarat, India',
   email: 'jenilmansuriya@gmail.com',
-  phone: '+91-7861933364',
+
   availability: 'Open to internships and research collaborations',
   education: {
-    institution: 'Indian Institute of Information Technology, Vadodara — ICD',
+    institution: 'Indian Institute of Information Technology, Vadodara',
     degree: 'B.Tech in Computer Science and Engineering',
     period: '2023 – 2027',
   },
@@ -52,10 +52,8 @@ My recent work spans EEG-based brain aging analysis, mixture-of-experts deep lea
     },
   ],
   socialLinks: {
-    github: 'https://github.com/',
-    linkedin: 'https://linkedin.com/',
-    leetcode: 'https://leetcode.com/',
-    geeksforgeeks: 'https://auth.geeksforgeeks.org/',
+    github: 'https://github.com/Jenil-2907',
+    linkedin: 'https://www.linkedin.com/in/jenil-mansuriya-31ab04285/',
   },
 };
 

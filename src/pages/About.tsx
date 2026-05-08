@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Github, Linkedin, Code2, Brain, GraduationCap, Trophy, MapPin, Mail } from 'lucide-react';
+import { Github, Linkedin, GraduationCap, Trophy, MapPin, Mail } from 'lucide-react';
 import { developerInfo } from '@/data/photographer';
 import { Separator } from '@/components/ui/separator';
 import { Badge } from '@/components/ui/badge';
@@ -72,28 +72,7 @@ export default function About() {
                     <Linkedin className="size-5" />
                   </a>
                 )}
-                {socialLinks.leetcode && (
-                  <a
-                    href={socialLinks.leetcode}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="p-3 border border-border rounded-sm hover:bg-accent transition-colors"
-                    aria-label="LeetCode"
-                  >
-                    <Code2 className="size-5" />
-                  </a>
-                )}
-                {socialLinks.geeksforgeeks && (
-                  <a
-                    href={socialLinks.geeksforgeeks}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="p-3 border border-border rounded-sm hover:bg-accent transition-colors"
-                    aria-label="GeeksforGeeks"
-                  >
-                    <Brain className="size-5" />
-                  </a>
-                )}
+
               </div>
             </div>
 
