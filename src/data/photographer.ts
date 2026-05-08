@@ -28,11 +28,11 @@ My recent work spans EEG-based brain aging analysis, mixture-of-experts deep lea
     },
     {
       label: 'Frameworks & Libraries',
-      items: ['Node.js', 'Flask', 'TensorFlow / Keras', 'scikit-learn', 'WebSocket', 'Socket.io'],
+      items: ['React', 'Node.js', 'Express.js', 'Flask', 'Tailwind CSS', 'TensorFlow / Keras', 'scikit-learn', 'WebSocket', 'Socket.io'],
     },
     {
       label: 'Databases',
-      items: ['MySQL', 'MongoDB'],
+      items: ['MySQL', 'MongoDB', 'Cassandra (learning)'],
     },
     {
       label: 'Tools & Platforms',
