@@ -47,7 +47,7 @@ export function Header() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              {developerInfo.name.split(' ')[0].toUpperCase()}.
+              For engineers Elegance lies in simplicity..
             </motion.span>
           </Link>
 
