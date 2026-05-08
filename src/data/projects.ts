@@ -34,7 +34,7 @@ export const projects: Project[] = [
       'Integrated LIME for explainability, highlighting disease-relevant leaf regions for trust in real-world use.',
     ],
     techStack: ['Python', 'TensorFlow / Keras', 'NumPy', 'LIME'],
-    links: [{ label: 'GitHub', url: '#' }],
+    links: [{ label: 'GitHub', url: 'https://github.com/Jenil-2907/Dynamic-weighting-for-ensemble-learning' }],
   },
   {
     id: '3',
@@ -52,7 +52,7 @@ export const projects: Project[] = [
       'Authored a complete Software Requirements Specification (SRS) to drive the development lifecycle.',
     ],
     techStack: ['Node.js', 'WebSocket', 'Socket.io', 'RPC APIs', 'Docker'],
-    links: [{ label: 'GitHub', url: '#' }],
+    links: [{ label: 'GitHub', url: 'https://github.com/Jenil-2907/Codab' }],
   },
   {
     id: '4',
@@ -69,7 +69,7 @@ export const projects: Project[] = [
       'Built an interactive learning module with predefined challenges and automated output verification.',
     ],
     techStack: ['Flask', 'Python', 'REST APIs', 'Linux', 'nasm', 'qemu'],
-    links: [{ label: 'GitHub', url: '#' }],
+    links: [{ label: 'GitHub', url: 'https://github.com/Jenil-2907/AssemblyX' }],
   },
 ];
 
