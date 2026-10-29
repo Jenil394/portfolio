@@ -13,7 +13,7 @@ export const developerInfo: DeveloperInfo = {
 
 My recent work spans EEG-based brain aging analysis, mixture-of-experts deep learning for plant disease detection, and low-latency collaborative tooling. I also compete actively in CTFs and hackathons, where I focus on PWN, Reverse Engineering, and AI security.`,
   location: 'Jamnagar, Gujarat, India',
-  email: 'jenilmansuriya@gmail.com',
+  email: 'jenilmansuriya2907@gmail.com',
 
   availability: 'Open to internships and research collaborations',
   education: {

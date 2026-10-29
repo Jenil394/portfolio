@@ -48,6 +48,7 @@ export function Header() {
               transition={{ duration: 0.6, delay: 0.2 }}
             >
               For engineers Elegance lies in simplicity
+              For engineers Elegance lies in simplicity..
             </motion.span>
           </Link>
 
